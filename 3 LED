@@ -1,0 +1,40 @@
+int Rled = 10;
+int Yled = 11;
+int Gled = 12;
+int Pbtn = 2;
+int btnst = 0;
+void setup()
+{
+  pinMode(Rled, OUTPUT);
+  pinMode(Yled, OUTPUT);
+  pinMode(Gled, OUTPUT);
+  pinMode(Pbtn, INPUT);
+}
+
+void loop()
+{
+  
+  btnst == LOW;
+  btnst = digitalRead(Pbtn);
+  
+if (btnst == HIGH) {
+    digitalWrite(Rled, HIGH);
+    delay(500);
+    digitalWrite(Rled, LOW); 
+    
+ 	digitalWrite(Yled, HIGH);
+  	delay(500); 
+  	digitalWrite(Yled, LOW);
+  
+  	digitalWrite(Gled, HIGH);
+  	delay(500); 
+  	digitalWrite(Gled, LOW);
+  	delay(200);
+   }
+else {
+    digitalWrite (Gled, LOW);
+    digitalWrite (Rled, LOW);
+    digitalWrite (Yled, LOW);
+    
+  }
+}
